@@ -1,24 +1,23 @@
 const numbers = [1, 2, 3, 4];
 
-// Dapatkan semua nomor genap dari array numbers dengan menggunakan method filter,
-// dan tetapkan hasilnya ke constant evenNumbers 
+// Buatlah array baru di constant numbers dengan menggunakan method map,
+// dan tetapkan hasilnya ke constant doubledNumbers 
+const doubledNumbers = numbers.map((number) => { return number * 2 });
 
-const evenNumbers = numbers.filter((number) => { return number % 2 === 0 });
-
-// Print nilai evenNumbers
-console.log(evenNumbers);
+// Print constant doubledNumbers
+console.log(doubledNumbers);
 
 
-const characters = [
-  {id: 1, name:"Ninja Ken", age: 14},
-  {id: 2, name:"Baby Ben", age: 5},
-  {id: 3, name:"Guru Domba", age: 100}
+const names = [
+  {firstName: "Kate", lastName: "Jones"},
+	{firstName: "John", lastName: "Smith"},
+	{firstName: "Dennis", lastName: "Williams"},
+	{firstName: "David", lastName: "Black"}
 ];
 
-// Dapatkan characters berumur lebih muda dari 20,
-// dan tetapkan hasilnya ke constant underTwenty 
+// Buatlah array baru didalam constant names dengan menggunakan method map,
+// dan tetapkan sebagai constant fullNames
+const fullNames = names.map((name) => { return name.firstName + " " + name.lastName });
 
-const underTwenty = characters.filter((character) => { return character.age < 20 });
-
-// Print nilai underTwenty
-console.log(underTwenty);
+// Print constant fullNames
+console.log(fullNames);
