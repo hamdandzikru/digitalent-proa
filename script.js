@@ -1,9 +1,4 @@
-const characters = ["Ninja Ken", "Baby Ben", "Guru Domba"];
+const characters = ["Ninja Ken", "Baby Ben", "Guru Domba", "Birdie"];
 
-console.log(characters);
-
-// Tambahkan string "Birdie" ke array characters dengan method push
-characters.push("Birdie");
-
-// Print array characters
-console.log(characters);
+// Cetak semua element didalam array characters dengan menggunakan method forEach
+characters.forEach((character) => { console.log(character) });
