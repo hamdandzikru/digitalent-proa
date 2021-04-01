@@ -1,16 +1,9 @@
-const printKen = () => {
-    console.log("Ninja Ken");
+const call = (callback) => {
+    callback("Ninja Ken", 14);
   };
   
-  const call = (callback) => {
-    console.log("Memanggil callback function.");
-    callback();
-  };
-  
-  call(printKen);
-  
-  // Deklarasikan function didalam argument dan teruskan
-  call(() => {
-    console.log("Guru Domba");
+  // Tambahkan sebuah function yang menerima dua argument didalam argument call
+  call((name, age) => {
+    console.log(`${name} berusia ${age} tahun.`);
   });
   
